@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c968eeb8-1e88-40d1-aa40-dc3d0956d818" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1VrNq1TyBzfCozhO3LpfDusQtER" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="ts.external.directory.path" value="C:\Users\Rewin\WebstormProjects\Sims Mods\client\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/client/src" />
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c968eeb8-1e88-40d1-aa40-dc3d0956d818" name="Default Changelist" comment="" />
+      <created>1578007440214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578007440214</updated>
+      <workItem from="1578007441946" duration="486000" />
+      <workItem from="1578007957766" duration="762000" />
+      <workItem from="1578022835983" duration="4254000" />
+      <workItem from="1578184102273" duration="2348000" />
+      <workItem from="1579456031308" duration="4326000" />
+      <workItem from="1579473107382" duration="2000" />
+      <workItem from="1579473119974" duration="1705000" />
+      <workItem from="1580604318695" duration="88000" />
+      <workItem from="1583303450650" duration="505000" />
+      <workItem from="1583303968454" duration="637000" />
+      <workItem from="1583304623506" duration="723000" />
+      <workItem from="1583305356490" duration="771000" />
+      <workItem from="1583306505729" duration="500000" />
+      <workItem from="1583331148566" duration="5448000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" width="816" height="729" key="#Intentions" timestamp="1583334199058">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" width="816" height="729" key="#Intentions/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583334199058" />
+    <state x="616" y="315" width="657" height="428" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583331221763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="315" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583331221763" />
+    <state x="664" y="346" width="657" height="428" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1578178807496" />
+    <state x="681" y="280" width="624" height="557" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578007862170">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="681" y="280" width="624" height="557" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578007862170" />
+    <state x="731" y="289" width="524" height="515" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578007691640">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="731" y="289" width="524" height="515" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1578007691640" />
+    <state x="740" y="267" key="FileChooserDialogImpl" timestamp="1583305308851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="267" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583305308851" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1583332948827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583332948827" />
+  </component>
+</project>
