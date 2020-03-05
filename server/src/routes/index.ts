@@ -3,10 +3,11 @@ import { getRenderer, wrap } from './utils';
 import { Request, Response } from 'express';
 import serveStatic from 'serve-static';
 import { join } from 'path';
+import auth from './auth';
 
 const router = Router();
 
-// router.use('/api', api);
+router.use('/auth', auth);
 
 router.use('/dist', serveStatic(join(process.cwd(), '..', 'client', 'dist')));
 router.use(

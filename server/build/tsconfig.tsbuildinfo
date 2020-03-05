@@ -413,57 +413,53 @@
         "version": "3e03ea3c4d568a10e41f540bc891c5fb42c036a430187132e599176f7974eaf7",
         "signature": "3e03ea3c4d568a10e41f540bc891c5fb42c036a430187132e599176f7974eaf7"
       },
-      "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts": {
+      "../node_modules/@types/mysql/lib/protocol/sequences/Sequence.d.ts": {
         "version": "0506328b96bdd546742da97b70a92514b1e4847b9387758f44c7e7052443f98e",
         "signature": "0506328b96bdd546742da97b70a92514b1e4847b9387758f44c7e7052443f98e"
       },
-      "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts": {
+      "../node_modules/@types/mysql/lib/protocol/packets/OkPacket.d.ts": {
         "version": "5ba455ec6f0b9b40e71225a835df1c4830eabbc661c0bcdcae29b62b5dce7deb",
         "signature": "5ba455ec6f0b9b40e71225a835df1c4830eabbc661c0bcdcae29b62b5dce7deb"
       },
-      "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts": {
+      "../node_modules/@types/mysql/lib/protocol/packets/RowDataPacket.d.ts": {
         "version": "4dce711bd3eb8ef017e35ff1ed0957cf748c2f504777bfa935382f376932fd3a",
         "signature": "4dce711bd3eb8ef017e35ff1ed0957cf748c2f504777bfa935382f376932fd3a"
       },
-      "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts": {
+      "../node_modules/@types/mysql/lib/protocol/packets/FieldPacket.d.ts": {
         "version": "d5df920a5da67836acb16e8a4db65135351be93302fb0072d657e671e2d92220",
         "signature": "d5df920a5da67836acb16e8a4db65135351be93302fb0072d657e671e2d92220"
       },
-      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts": {
-        "version": "4c749621a8903239d5d8b683a23816198135456b1d07c6bb208edc9d490e5b9e",
-        "signature": "4c749621a8903239d5d8b683a23816198135456b1d07c6bb208edc9d490e5b9e"
-      },
       "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts": {
-        "version": "10363b30cdaf1643a70439e1ee9a7afe29aeb750c700f39b8cd5a411be8756c0",
-        "signature": "10363b30cdaf1643a70439e1ee9a7afe29aeb750c700f39b8cd5a411be8756c0"
+        "version": "c628198c8945e2faf30eba8d0ea77441091d6a2a57506e36d5f736e446b603ef",
+        "signature": "c628198c8945e2faf30eba8d0ea77441091d6a2a57506e36d5f736e446b603ef"
       },
-      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts": {
+      "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts": {
         "version": "a9ea7b461ac39461b7ac8f2aa326ea1375b03fda1f2db8749dc507e0c291ad7c",
         "signature": "a9ea7b461ac39461b7ac8f2aa326ea1375b03fda1f2db8749dc507e0c291ad7c"
       },
-      "../node_modules/@types/mysql/lib/connection.d.ts": {
-        "version": "92108176f6b60872596bc094a23f8e395dba1916540a38d732751f0976d70558",
-        "signature": "92108176f6b60872596bc094a23f8e395dba1916540a38d732751f0976d70558"
+      "../node_modules/@types/mysql/lib/Connection.d.ts": {
+        "version": "abb5750ca42df5494567759890794feeb5607c4d793eff8d1dda0e1bd3b5dfe0",
+        "signature": "abb5750ca42df5494567759890794feeb5607c4d793eff8d1dda0e1bd3b5dfe0"
       },
-      "../node_modules/@types/mysql/lib/poolconnection.d.ts": {
+      "../node_modules/@types/mysql/lib/PoolConnection.d.ts": {
         "version": "617a866591d14eafd5f4d4d02b5e144d58fec2ea863a8399736e6769273c616d",
         "signature": "617a866591d14eafd5f4d4d02b5e144d58fec2ea863a8399736e6769273c616d"
       },
-      "../node_modules/@types/mysql/lib/pool.d.ts": {
-        "version": "d19def31bed01adc2a61f9418bc1f64b591199706a3a4583efba090fe37a6a8b",
-        "signature": "d19def31bed01adc2a61f9418bc1f64b591199706a3a4583efba090fe37a6a8b"
+      "../node_modules/@types/mysql/lib/Pool.d.ts": {
+        "version": "133db765777148a6a880aa961c8c7afd297de4a014bbd1b5a1ca0816929d9a0d",
+        "signature": "133db765777148a6a880aa961c8c7afd297de4a014bbd1b5a1ca0816929d9a0d"
       },
-      "../node_modules/@types/mysql/lib/poolcluster.d.ts": {
+      "../node_modules/@types/mysql/lib/PoolCluster.d.ts": {
         "version": "411f5ee863896acd5ce198869f8394c7dc541bbf363cde2d4f4124471b1ca6dd",
         "signature": "411f5ee863896acd5ce198869f8394c7dc541bbf363cde2d4f4124471b1ca6dd"
       },
       "../node_modules/@types/mysql/index.d.ts": {
-        "version": "61f03616b31fd67e19be9872092238ed2b443b0e1a5bda7c61be52c34ec68e89",
-        "signature": "61f03616b31fd67e19be9872092238ed2b443b0e1a5bda7c61be52c34ec68e89"
+        "version": "540d10927cf916735b0c79a18ff1400136305af1ed0b01973cefa2dd6cc159f9",
+        "signature": "540d10927cf916735b0c79a18ff1400136305af1ed0b01973cefa2dd6cc159f9"
       },
       "../node_modules/@types/mysql2/index.d.ts": {
-        "version": "92f443a4a9258290b08d486e71a83c00867676dc4568a662d34e140c055a72a6",
-        "signature": "92f443a4a9258290b08d486e71a83c00867676dc4568a662d34e140c055a72a6"
+        "version": "468ecd0fc38276c7d8d20cb225417604fa3e24d3e51628a0ff3716ca307a3b90",
+        "signature": "468ecd0fc38276c7d8d20cb225417604fa3e24d3e51628a0ff3716ca307a3b90"
       },
       "../node_modules/@types/mysql2/promise.d.ts": {
         "version": "040473ae85bd568964d629fa213ba82ce5e800bf892668193ba4c015eee7a62d",
@@ -471,11 +467,11 @@
       },
       "../src/data/index.ts": {
         "version": "73bc8fce1cea45f3a7e7e9849c827642549c67ba115ea56289d985ea47693d1f",
-        "signature": "c63f7f39fa6b9a699c23633cb66cb9619dddb702261d9d0f631384f40d02245d"
+        "signature": "2424a65c6f0cd7f597454e0acd4de51fc602e4807a80bf80bd89b976193737f8"
       },
       "../src/index.ts": {
         "version": "51ff1f4c60cf3929b9df9469f26072e9efa55ac520a6a5d72ad3ca1ac344c3ad",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../node_modules/@types/connect-redis/index.d.ts": {
         "version": "94d232890098944cf1d2faadb8a01230c7fbcbe6ecab322868c33856d1a9e551",
@@ -1250,49 +1246,42 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts": [
+      "../node_modules/@types/mysql/lib/protocol/sequences/Sequence.d.ts": [
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts": [
+      "../node_modules/@types/mysql/lib/protocol/packets/OkPacket.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts": [
+      "../node_modules/@types/mysql/lib/protocol/packets/RowDataPacket.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts": [
+      "../node_modules/@types/mysql/lib/protocol/packets/FieldPacket.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/OkPacket.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/RowDataPacket.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/FieldPacket.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts": [
+        "../node_modules/@types/mysql/lib/protocol/sequences/Sequence.d.ts",
         "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
         "../node_modules/@types/node/stream.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -1300,8 +1289,8 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/connection.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
+      "../node_modules/@types/mysql/lib/Connection.d.ts": [
+        "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts",
         "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -1309,27 +1298,27 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/poolconnection.d.ts": [
-        "../node_modules/@types/mysql/lib/connection.d.ts",
+      "../node_modules/@types/mysql/lib/PoolConnection.d.ts": [
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/pool.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
+      "../node_modules/@types/mysql/lib/Pool.d.ts": [
+        "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts",
         "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
-        "../node_modules/@types/mysql/lib/connection.d.ts",
-        "../node_modules/@types/mysql/lib/poolconnection.d.ts",
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
+        "../node_modules/@types/mysql/lib/PoolConnection.d.ts",
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/poolcluster.d.ts": [
-        "../node_modules/@types/mysql/lib/connection.d.ts",
-        "../node_modules/@types/mysql/lib/poolconnection.d.ts",
+      "../node_modules/@types/mysql/lib/PoolCluster.d.ts": [
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
+        "../node_modules/@types/mysql/lib/PoolConnection.d.ts",
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1337,11 +1326,11 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@types/mysql/index.d.ts": [
-        "../node_modules/@types/mysql/lib/connection.d.ts",
-        "../node_modules/@types/mysql/lib/poolconnection.d.ts",
-        "../node_modules/@types/mysql/lib/pool.d.ts",
-        "../node_modules/@types/mysql/lib/poolcluster.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
+        "../node_modules/@types/mysql/lib/PoolConnection.d.ts",
+        "../node_modules/@types/mysql/lib/Pool.d.ts",
+        "../node_modules/@types/mysql/lib/PoolCluster.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts",
         "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -2127,98 +2116,21 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts": [
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
-        "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/connection.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/poolconnection.d.ts": [
-        "../node_modules/@types/mysql/lib/connection.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/pool.d.ts": [
-        "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
-        "../node_modules/@types/mysql/lib/connection.d.ts",
-        "../node_modules/@types/mysql/lib/poolconnection.d.ts",
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/mysql/lib/poolcluster.d.ts": [
-        "../node_modules/@types/mysql/lib/connection.d.ts",
-        "../node_modules/@types/mysql/lib/poolconnection.d.ts",
-        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/OkPacket.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/RowDataPacket.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/FieldPacket.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@types/mysql/index.d.ts": [
-        "../node_modules/@types/mysql/lib/connection.d.ts",
-        "../node_modules/@types/mysql/lib/poolconnection.d.ts",
-        "../node_modules/@types/mysql/lib/pool.d.ts",
-        "../node_modules/@types/mysql/lib/poolcluster.d.ts",
-        "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
+        "../node_modules/@types/mysql/lib/PoolConnection.d.ts",
+        "../node_modules/@types/mysql/lib/Pool.d.ts",
+        "../node_modules/@types/mysql/lib/PoolCluster.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts",
         "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -2248,6 +2160,76 @@
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/express-session/index.d.ts",
         "../node_modules/@types/redis/ts3.1/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/protocol/sequences/Sequence.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts": [
+        "../node_modules/@types/mysql/lib/protocol/sequences/Sequence.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/Pool.d.ts": [
+        "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
+        "../node_modules/@types/mysql/lib/PoolConnection.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/Connection.d.ts": [
+        "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts",
+        "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/PoolCluster.d.ts": [
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
+        "../node_modules/@types/mysql/lib/PoolConnection.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/PoolConnection.d.ts": [
+        "../node_modules/@types/mysql/lib/Connection.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/protocol/packets/OkPacket.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/protocol/packets/RowDataPacket.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/protocol/packets/FieldPacket.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2293,6 +2275,7 @@
       "../node_modules/typescript/lib/lib.es2020.string.d.ts",
       "../node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../src/config.ts",
       "../node_modules/@types/node/globals.d.ts",
       "../node_modules/@types/node/assert.d.ts",
       "../node_modules/@types/node/async_hooks.d.ts",
@@ -2357,24 +2340,22 @@
       "../node_modules/@types/redis/ts3.1/index.d.ts",
       "../src/services/redis.ts",
       "../node_modules/@types/express-session/index.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts",
+      "../node_modules/@types/connect-redis/index.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/sequences/Sequence.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/OkPacket.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
-      "../node_modules/@types/mysql/lib/connection.d.ts",
-      "../node_modules/@types/mysql/lib/poolconnection.d.ts",
-      "../node_modules/@types/mysql/lib/pool.d.ts",
-      "../node_modules/@types/mysql/lib/poolcluster.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/RowDataPacket.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/FieldPacket.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/sequences/Query.d.ts",
+      "../node_modules/@types/mysql/lib/Connection.d.ts",
+      "../node_modules/@types/mysql/lib/PoolConnection.d.ts",
+      "../node_modules/@types/mysql/lib/Pool.d.ts",
+      "../node_modules/@types/mysql/lib/PoolCluster.d.ts",
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../src/data/index.ts",
-      "../src/index.ts",
-      "../node_modules/@types/connect-redis/index.d.ts",
-      "../src/config.ts"
+      "../src/index.ts"
     ]
   },
   "version": "3.8.3"
