@@ -1,14 +1,35 @@
 <template>
-    <input ref="input" class="input" :type="type" :placeholder="placeholder" :value="value" />
+    <div class="container">
+        <input
+            ref="input"
+            class="input"
+            :type="type"
+            :placeholder="placeholder"
+            :value="content"
+            @input="updateValue($event.target.value)"
+        />
+        <p class="undertext" v-if="undertext.length > 0">{{ undertext }}</p>
+    </div>
 </template>
 
-<style lang="scss">
-    .input {
-        padding: 1rem;
+<style lang="scss" scoped>
+    .container {
+        > .input {
+            padding: 1rem;
+            width: 100%;
 
-        border: 1px solid gray;
-        border-radius: 4px;
-        outline: none;
+            border: 1px solid gray;
+            border-radius: 4px;
+            outline: none;
+
+            box-sizing: border-box;
+        }
+        > .undertext {
+            padding: 0 4px;
+            margin: 8px 0 0;
+
+            font-size: 0.8rem;
+        }
     }
 </style>
 
@@ -17,13 +38,26 @@
         props: {
             type: {
                 type: String,
-                default: "text",
+                default: 'text',
             },
             placeholder: {
                 type: String,
-                default: "",
+                default: '',
             },
             value: [String, Number],
+            undertext: {
+                type: String,
+                default: '',
+            },
+        },
+        data: (vue = this) => ({
+            content: vue.value,
+        }),
+        methods: {
+            updateValue(value) {
+                this.content = value;
+                this.$emit('input', value);
+            },
         },
     };
 </script>

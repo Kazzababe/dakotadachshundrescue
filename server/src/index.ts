@@ -3,7 +3,7 @@ import routes from './routes';
 import bodyParser from 'body-parser';
 import redis from './services/redis';
 import session from 'express-session';
-import { setupDatabase } from "./data";
+import { setupDatabase } from './data';
 const RedisStore = require('connect-redis')(session);
 
 const app: Express = express();

@@ -7,21 +7,27 @@ const express_1 = require("express");
 const utils_1 = require("./utils");
 const serve_static_1 = __importDefault(require("serve-static"));
 const path_1 = require("path");
+const auth_1 = __importDefault(require("./auth"));
 const router = express_1.Router();
-// router.use('/api', api);
+router.use('/auth', auth_1.default);
 router.use('/dist', serve_static_1.default(path_1.join(process.cwd(), '..', 'client', 'dist')));
 router.use('/static', serve_static_1.default(path_1.join(process.cwd(), '..', 'client', 'public')));
+function getHomeData(req) {
+    return req.session
+        ? {
+            user: req.session.user,
+        }
+        : {};
+}
 const routes = [
-    { path: '/', data: () => ({}) },
-    { path: '/auth/login', data: () => ({}) },
-    { path: '/auth/register', data: () => ({}) },
+    { path: '/', data: getHomeData },
+    { path: '/auth/login' },
+    { path: '/auth/register' },
 ];
 async function getData(req, route) {
     const data = route.data;
     if (!data) {
-        return {
-            error: true,
-        };
+        return {};
     }
     return await data(req);
 }

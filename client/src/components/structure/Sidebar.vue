@@ -1,30 +1,30 @@
 <template>
-        <div class="sidebar" :class="{ expanded }">
-            <nav class="sidenav">
-                <div class="item" @click="expanded = !expanded">
-                    <span class="icon">
-                        <fa-icon icon="home"></fa-icon>
-                    </span>
-                    <span class="text">Dashboard</span>
-                </div>
-                <div class="item">
-                    <span class="icon">
-                        <fa-icon icon="chart-pie"></fa-icon>
-                    </span>
-                    <span class="text">Account Metrics</span>
-                </div>
-                <div class="item">
-                    <span class="icon">
-                        <fa-icon icon="list"></fa-icon>
-                    </span>
-                    <span class="text">Account Specs</span>
-                </div>
-                <div class="item">
-                    <span class="icon">XD</span>
-                    <span class="text">Menu item 1</span>
-                </div>
-            </nav>
-        </div>
+    <div class="sidebar" :class="{ expanded }">
+        <nav class="sidenav">
+            <div class="item" @click="expanded = !expanded">
+                <span class="icon">
+                    <fa-icon icon="home"></fa-icon>
+                </span>
+                <span class="text">Dashboard</span>
+            </div>
+            <div class="item">
+                <span class="icon">
+                    <fa-icon icon="chart-pie"></fa-icon>
+                </span>
+                <span class="text">Account Metrics</span>
+            </div>
+            <div class="item">
+                <span class="icon">
+                    <fa-icon icon="list"></fa-icon>
+                </span>
+                <span class="text">Account Specs</span>
+            </div>
+            <div class="item">
+                <span class="icon">XD</span>
+                <span class="text">Menu item 1</span>
+            </div>
+        </nav>
+    </div>
 </template>
 
 <style lang="scss">
@@ -34,12 +34,12 @@
         width: 75px;
 
         background-color: hsl(300, 100%, 25%);
-        box-shadow: inset -4px 0 20px hsla(0, 0%, 0%, .2);
+        box-shadow: inset -4px 0 20px hsla(0, 0%, 0%, 0.2);
         overflow-x: hidden;
 
         flex-direction: column;
 
-        transition: width .2s ease-in-out;
+        transition: width 0.2s ease-in-out;
 
         &.expanded {
             width: 250px;
@@ -76,7 +76,7 @@
                     justify-content: center;
                 }
                 > .text {
-                    padding-left: .5rem;
+                    padding-left: 0.5rem;
 
                     white-space: nowrap;
                 }
@@ -90,8 +90,6 @@
         data: () => ({
             expanded: false,
         }),
-        methods: {
-
-        },
+        methods: {},
     };
 </script>

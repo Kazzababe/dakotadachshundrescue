@@ -2,7 +2,7 @@
     <div class="base-template">
         <div class="page-wrapper">
             <div class="page-content">
-                <!-- TOPNAV -->
+                <Topnav v-if="nav" />
                 <slot />
                 <!-- FOOTER -->
             </div>
@@ -10,7 +10,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .base-template {
         position: relative;
 
@@ -35,6 +35,8 @@
 </style>
 
 <script>
+    import Topnav from '@/components/structure/Topnav.vue';
+
     export default {
         props: {
             nav: {
@@ -45,6 +47,9 @@
                 type: Boolean,
                 default: true,
             },
+        },
+        components: {
+            Topnav,
         },
     };
 </script>

@@ -14,20 +14,18 @@ router.onReady(() => {
             .then(res => res.json())
             .then(res => {
                 if (res.error) {
-                    console.log('error');
+                    if (res.code === 301) {
+                        return next(res.path);
+                    }
                     return;
                 }
                 Vue.prototype.$store = res.data;
 
-                if (to.name === 'create') {
-                    if (!res.data.user) {
-                        return next(false);
-                    }
-                }
                 next();
             })
             .catch(err => {
-                console.log(err);
+                console.error('Encountered error:', err);
+                window.location.replace(to.fullPath);
             });
     });
 

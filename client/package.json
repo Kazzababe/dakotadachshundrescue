@@ -1,7 +1,7 @@
 {
   "scripts": {
     "watch:all": "rm -rf dist && parallel-webpack --config webpack/webpack.merged.config.js --progress --hide-modules --watch",
-    "prettier": "prettier --write '**/*.{ts,vue}'"
+    "prettier": "prettier --write **/*.{ts,vue}"
   },
   "devDependencies": {
     "css-loader": "^3.2.0",

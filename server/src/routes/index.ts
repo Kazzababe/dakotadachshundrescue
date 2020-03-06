@@ -15,19 +15,25 @@ router.use(
     serveStatic(join(process.cwd(), '..', 'client', 'public'))
 );
 
+function getHomeData(req: Request) {
+    return req.session
+        ? {
+              user: req.session.user,
+          }
+        : {};
+}
+
 const routes = [
-    { path: '/', data: () => ({ }) },
-    { path: '/auth/login', data: () => ({ }) },
-    { path: '/auth/register', data: () => ({ }) },
+    { path: '/', data: getHomeData },
+    { path: '/auth/login' },
+    { path: '/auth/register' },
 ];
 
 async function getData(req: Request, route: any) {
     const data = route.data;
 
     if (!data) {
-        return {
-            error: true,
-        };
+        return {};
     }
     return await data(req);
 }
