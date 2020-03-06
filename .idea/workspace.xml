@@ -4,34 +4,12 @@
     <list default="true" id="c968eeb8-1e88-40d1-aa40-dc3d0956d818" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.prettierrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/0.c956328be87695d8d5b1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/1.084e243e464223ffe02c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/2.31f508e2d2b7d647db0d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/3.2a34109629d9ec6fe5ae.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/4.9ad9a20687b28a5df1b0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/main.4668de2e474944f41dd0.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-client-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/vue-ssr-client-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-server-bundle.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/vue-ssr-server-bundle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/client-entry.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/client-entry.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/structure/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/structure/input/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/input/Input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/templates/Standard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/templates/Standard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/.prettierrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/build/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/build/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/build/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/server/build/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Upload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/routes/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/auth/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/001-users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/001-users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +50,14 @@
     <property name="ts.external.directory.path" value="C:\Users\Rewin\WebstormProjects\Sims Mods\client\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rewin\WebstormProjects\Sims Mods\client\src\pages\dashboard" />
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/client/src" />
-      <recent name="$PROJECT_DIR$/client" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/client" />
     </key>
   </component>
@@ -119,7 +98,8 @@
       <workItem from="1583306505729" duration="500000" />
       <workItem from="1583331148566" duration="5448000" />
       <workItem from="1583396353526" duration="586000" />
-      <workItem from="1583454208696" duration="12883000" />
+      <workItem from="1583454208696" duration="13630000" />
+      <workItem from="1583517933046" duration="2470000" />
     </task>
     <servers />
   </component>

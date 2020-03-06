@@ -4,6 +4,10 @@ import { Request, Response } from 'express';
 import serveStatic from 'serve-static';
 import { join } from 'path';
 import auth from './auth';
+import { getDashboardData } from './dashboard';
+import { getSettingsData } from './dashboard/settings';
+import { getUploadData } from './dashboard/upload';
+import { getBrowseData } from './browse';
 
 const router = Router();
 
@@ -27,6 +31,10 @@ const routes = [
     { path: '/', data: getHomeData },
     { path: '/auth/login' },
     { path: '/auth/register' },
+    { path: '/browse', data: getBrowseData },
+    { path: '/dashboard', data: getDashboardData },
+    { path: '/dashboard/settings', data: getSettingsData },
+    { path: '/dashboard/upload', data: getUploadData },
 ];
 
 async function getData(req: Request, route: any) {

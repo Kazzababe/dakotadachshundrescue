@@ -466,11 +466,27 @@
         "signature": "219c51921fd64510cd81b480879bc36ae0ea40e5881b0824104a36b5287cff73"
       },
       "../src/routes/auth/index.ts": {
-        "version": "3ac90230d741b921348f81537d1d35a8b85c1d0e8f44866168cd12c1ad51c214",
+        "version": "6a0efe7b25ec096f4367ad105e07af524fd3b75943cecf216163fedec36f455c",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
+      "../src/routes/dashboard/index.ts": {
+        "version": "77da3942c4f1af675199921ef843a4ec9b53b7fcc2081b6de85181d9b2f3f48c",
+        "signature": "9f58bc372ee0c280fe5d6df5660679d81bb136b70d58a9ed3b29ee7eceacea4e"
+      },
+      "../src/routes/dashboard/settings.ts": {
+        "version": "82a79c5dd161dd2ae16609e5ed5c6c454b09e6a2c684b2aa11675962f5b852bb",
+        "signature": "5a01580fe9f89b2b4858c75e7987e76a77ff30ddab53464b23de0879ff6deff7"
+      },
+      "../src/routes/dashboard/upload.ts": {
+        "version": "9f4c49ff93cffbc7c1edd98e21dfc49e343a647b821ea5c87da12e85b27938d9",
+        "signature": "44031980feb7d0a0f12efc30f2dfbfc268b0a60bf1ed351a9a71c6bb4cbb63d4"
+      },
+      "../src/routes/browse/index.ts": {
+        "version": "c3757663d2aa9e912973ca8249acf561920679c6f245c738d3d1c838622b60f9",
+        "signature": "5afdacfec9264ce2a73d4f3999ba309e73994eed9b1c61496d8118a26bfe49a3"
+      },
       "../src/routes/index.ts": {
-        "version": "8d59056f18920b47ae05c2407df1895612e9bf542a61f3ed8459e4685ff44e4d",
+        "version": "d77197aebda326ecf7f6775d707ca74fa9503a031d07b971553ff0e070b3f8cb",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../node_modules/@types/redis/ts3.1/index.d.ts": {
@@ -1374,12 +1390,44 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/routes/dashboard/index.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/routes/dashboard/settings.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/routes/dashboard/upload.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/routes/browse/index.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/routes/index.ts": [
         "../node_modules/@types/express/index.d.ts",
         "../src/routes/utils.ts",
         "../node_modules/@types/serve-static/index.d.ts",
         "../node_modules/@types/node/path.d.ts",
         "../src/routes/auth/index.ts",
+        "../src/routes/dashboard/index.ts",
+        "../src/routes/dashboard/settings.ts",
+        "../src/routes/dashboard/upload.ts",
+        "../src/routes/browse/index.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2266,6 +2314,18 @@
       "../src/routes/auth/index.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ],
+      "../src/routes/dashboard/index.ts": [
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/routes/dashboard/settings.ts": [
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/routes/dashboard/upload.ts": [
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/routes/browse/index.ts": [
+        "../node_modules/@types/express/index.d.ts"
+      ],
       "../src/routes/index.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ],
@@ -2417,13 +2477,17 @@
       "../src/data/index.ts",
       "../node_modules/@types/bcrypt/index.d.ts",
       "../src/interfaces/user.ts",
-      "../src/routes/index.ts",
+      "../src/routes/auth/index.ts",
+      "../src/routes/dashboard/index.ts",
+      "../src/routes/dashboard/settings.ts",
+      "../src/routes/dashboard/upload.ts",
+      "../src/routes/browse/index.ts",
       "../node_modules/@types/redis/ts3.1/index.d.ts",
       "../src/services/redis.ts",
       "../node_modules/@types/express-session/index.d.ts",
       "../src/index.ts",
       "../node_modules/@types/connect-redis/index.d.ts",
-      "../src/routes/auth/index.ts"
+      "../src/routes/index.ts"
     ]
   },
   "version": "3.8.3"

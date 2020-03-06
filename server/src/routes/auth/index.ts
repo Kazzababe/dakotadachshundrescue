@@ -140,14 +140,12 @@ router.post(
     })
 );
 
-router.get(
-    '/logout',
-    (req: Request, res: Response) => {
-        req.session && req.session.destroy((err) => {
-            err && console.error("Failed to destroy session %O", err);
+router.get('/logout', (req: Request, res: Response) => {
+    req.session &&
+        req.session.destroy(err => {
+            err && console.error('Failed to destroy session %O', err);
         });
-        res.redirect('/');
-    }
-)
+    res.redirect('/');
+});
 
 export default router;

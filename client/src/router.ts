@@ -10,6 +10,10 @@ export const createRouter = (): Router => {
             { name: 'home', path: '/', component: () => import('@/pages/Home.vue') },
             { name: 'login', path: '/auth/login', component: () => import('@/pages/auth/Login.vue') },
             { name: 'register', path: '/auth/register', component: () => import('@/pages/auth/Register.vue') },
+            { name: 'browse', path: '/browse', component: () => import('@/pages/browse/Search.vue') },
+            { name: 'dashboard', path: '/dashboard', component: () => import('@/pages/dashboard/Dashboard.vue') },
+            { name: 'settings', path: '/dashboard/settings', component: () => import('@/pages/dashboard/Settings.vue') },
+            { name: 'upload', path: '/dashboard/upload', component: () => import('@/pages/dashboard/Upload.vue') },
         ],
     });
 };
