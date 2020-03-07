@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 Vue.component('fa-icon', FontAwesomeIcon);
 Vue.component('cc-input', () => import('@/components/structure/input/Input.vue'));
 Vue.component('s-template', () => import('@/components/templates/Standard.vue'));
+Vue.component('cc-button', () => import('@/components/structure/button/Button.vue'));
 
 export const createApp = (data: any): { app: App; router: Router; store: any } => {
     const router = createRouter();

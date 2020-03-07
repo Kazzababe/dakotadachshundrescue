@@ -19,7 +19,7 @@
                         />
                         <div class="submit-block">
                             <router-link to="/auth/register">No account? Register</router-link>
-                            <button type="submit">Login</button>
+                            <cc-button type="submit">Login</cc-button>
                         </div>
                     </form>
                 </div>

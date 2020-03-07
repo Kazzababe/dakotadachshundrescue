@@ -18,8 +18,13 @@
             padding: 1rem;
             width: 100%;
 
-            border: 1px solid gray;
+            font-size: 1rem;
+
+            background-color: hsl(0, 0%, 98%);
+            border: none;
             border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19) inset;
+            color: hsl(0, 0%, 32%);
             outline: none;
 
             box-sizing: border-box;

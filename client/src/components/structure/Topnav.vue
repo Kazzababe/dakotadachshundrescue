@@ -3,12 +3,13 @@
         <nav class="primary">
             <router-link to="/" class="brand">BrandName</router-link>
             <router-link to="/browse">Search</router-link>
+            <router-link to="/dashboard/upload" v-if="$store.user">Upload</router-link>
         </nav>
         <nav class="user">
             <template v-if="$store.user">
-                <div class="dropdown">
+                <div class="dropdown" @mouseenter="dropdown = true" @mouseleave="dropdown = false">
                     <router-link to="/dashboard">{{ $store.user.username }}</router-link>
-                    <div class="content">
+                    <div class="content" v-if="dropdown">
                         <router-link to="/dashboard/settings">Settings</router-link>
                         <router-link to="/auth/logout">Logout</router-link>
                     </div>
@@ -79,17 +80,42 @@
                 > .content {
                     position: absolute;
                     top: 100%;
-                    right: 0;
+                    left: 50%;
 
                     display: flex;
+                    padding: 0.5rem 0;
+
+                    text-align: left;
+
+                    background-color: white;
+                    border-radius: 6px;
+                    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.25), 0 1px 2px hsla(0, 0%, 0%, 0.24);
 
                     flex-direction: column;
 
+                    transform: translateX(-50%);
+
                     > a {
-                        padding: 0.5rem 1rem;
+                        padding: 0.5rem 2rem;
+
+                        font-size: 0.75rem;
+
+                        color: black;
+
+                        &:hover {
+                            background-color: hsl(0, 0%, 90%);
+                        }
                     }
                 }
             }
         }
     }
 </style>
+
+<script>
+    export default {
+        data: () => ({
+            dropdown: false,
+        }),
+    };
+</script>

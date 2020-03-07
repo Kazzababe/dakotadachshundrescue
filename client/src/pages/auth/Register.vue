@@ -35,7 +35,7 @@
                         </div>
                         <div class="submit-block">
                             <router-link to="/auth/login">Sign in instead</router-link>
-                            <button type="submit">Register</button>
+                            <cc-button type="submit">Register</cc-button>
                         </div>
                     </form>
                 </div>
