@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c968eeb8-1e88-40d1-aa40-dc3d0956d818" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-client-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/vue-ssr-client-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-server-bundle.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/vue-ssr-server-bundle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Upload.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/auth/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/dashboard/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/dashboard/Settings.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +94,7 @@
       <workItem from="1583331148566" duration="5448000" />
       <workItem from="1583396353526" duration="586000" />
       <workItem from="1583454208696" duration="13630000" />
-      <workItem from="1583517933046" duration="2470000" />
+      <workItem from="1583517933046" duration="3849000" />
     </task>
     <servers />
   </component>
