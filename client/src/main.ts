@@ -4,11 +4,15 @@ import Router from 'vue-router';
 import { createRouter } from './router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faTimes);
 
 Vue.component('fa-icon', FontAwesomeIcon);
 Vue.component('cc-input', () => import('@/components/structure/input/Input.vue'));
 Vue.component('s-template', () => import('@/components/templates/Standard.vue'));
 Vue.component('cc-button', () => import('@/components/structure/button/Button.vue'));
+Vue.component('cc-modal', () => import('@/components/structure/modal/Modal.vue'));
 
 export const createApp = (data: any): { app: App; router: Router; store: any } => {
     const router = createRouter();

@@ -1,23 +1,23 @@
 <template>
-    <div class="nav-container">
+    <div class="nav-container" :class="{ top }">
         <nav class="primary">
-            <router-link to="/" class="brand">BrandName</router-link>
-            <router-link to="/browse">Search</router-link>
-            <router-link to="/dashboard/upload" v-if="$store.user">Upload</router-link>
+            <router-link to="/" class="brand nav-link">BrandName</router-link>
+            <router-link to="/browse" class="nav-link">Search</router-link>
+            <router-link to="/dashboard/upload" class="nav-link" v-if="$store.user">Upload</router-link>
         </nav>
         <nav class="user">
             <template v-if="$store.user">
                 <div class="dropdown" @mouseenter="dropdown = true" @mouseleave="dropdown = false">
-                    <router-link to="/dashboard">{{ $store.user.username }}</router-link>
+                    <router-link to="/dashboard" class="nav-link">{{ $store.user.username }}</router-link>
                     <div class="content" v-if="dropdown">
-                        <router-link to="/dashboard/settings">Settings</router-link>
-                        <router-link to="/auth/logout">Logout</router-link>
+                        <router-link to="/dashboard/settings" class="nav-link">Settings</router-link>
+                        <router-link to="/auth/logout" class="nav-link">Logout</router-link>
                     </div>
                 </div>
             </template>
             <template v-else>
-                <router-link to="/auth/login">Login</router-link>
-                <router-link to="/auth/register">Register</router-link>
+                <router-link to="/auth/login" class="nav-link">Login</router-link>
+                <router-link to="/auth/register" class="nav-link">Register</router-link>
             </template>
         </nav>
     </div>
@@ -25,16 +25,22 @@
 
 <style lang="scss" scoped>
     .nav-container {
+        position: fixed;
+        top: 0;
+
         display: flex;
         width: 100%;
+        height: 3.5rem;
         padding: 0 6rem;
 
-        background-color: hsl(202, 100%, 46%);
+        background-color: white;
+        box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.1),0 1px 2px 0 hsla(0, 0%, 0%, 0.06) !important;
 
         align-items: center;
         justify-content: space-between;
 
         box-sizing: border-box;
+        transition: box-shadow 0.2s ease-in-out;
 
         > .primary,
         > .user {
@@ -42,7 +48,19 @@
             font-weight: bold;
             text-transform: uppercase;
 
-            color: white;
+            color: hsl(222, 14%, 15%);
+
+            .nav-link {
+                text-decoration: none;
+
+                color: hsl(222, 14%, 15%);
+
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: hsl(250, 100%, 50%);
+                }
+            }
         }
         > .primary {
             display: flex;
@@ -55,18 +73,9 @@
             > a {
                 display: block;
                 padding: 1rem 0.5rem;
-
-                text-decoration: none;
-
-                color: white;
             }
         }
         > .user {
-            a {
-                text-decoration: none;
-
-                color: white;
-            }
             > a {
                 padding: 1rem 0.5rem;
             }
@@ -100,10 +109,9 @@
 
                         font-size: 0.75rem;
 
-                        color: black;
-
                         &:hover {
                             background-color: hsl(0, 0%, 90%);
+                            color: hsl(222, 14%, 15%);
                         }
                     }
                 }
@@ -116,6 +124,21 @@
     export default {
         data: () => ({
             dropdown: false,
+            top: false,
         }),
+        mounted() {
+            window.addEventListener('scroll', this.onScroll);
+
+            this.onScroll();
+        },
+        destroyed() {
+            window.removeEventListener('scroll', this.onScroll);
+        },
+        methods: {
+            onScroll() {
+                this.top = window.scrollY <= 5;
+                console.log(window.scrollY);
+            },
+        },
     };
 </script>

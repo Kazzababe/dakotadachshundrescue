@@ -1,7 +1,7 @@
 <template>
     <div class="base-template">
         <div class="page-wrapper">
-            <div class="page-content">
+            <div class="page-content" :class="{ space: nav }">
                 <Topnav v-if="nav" />
                 <slot />
                 <!-- FOOTER -->
@@ -29,6 +29,10 @@
 
                 flex: 1 0 auto;
                 flex-direction: column;
+
+                &.space {
+                    margin-top: 3.5rem;
+                }
             }
         }
     }

@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c968eeb8-1e88-40d1-aa40-dc3d0956d818" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/upload/UploadModal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-client-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/vue-ssr-client-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-server-bundle.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/vue-ssr-server-bundle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-client-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/vue-ssr-server-bundle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/structure/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/Topnav.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/structure/input/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/input/Input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/templates/Standard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/templates/Standard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/dashboard/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/dashboard/Settings.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/Upload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/dashboard/Upload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/Upload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +55,15 @@
     <property name="ts.external.directory.path" value="C:\Users\Rewin\WebstormProjects\Sims Mods\client\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Rewin\WebstormProjects\Sims Mods\client\src\pages\dashboard" />
-      <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/client" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/client/src" />
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rewin\WebstormProjects\Sims Mods\client\src\components\upload" />
+      <recent name="C:\Users\Rewin\WebstormProjects\Sims Mods\client\src\pages\dashboard" />
+      <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/client" />
     </key>
   </component>
@@ -102,7 +105,8 @@
       <workItem from="1583331148566" duration="5448000" />
       <workItem from="1583396353526" duration="586000" />
       <workItem from="1583454208696" duration="13630000" />
-      <workItem from="1583517933046" duration="5564000" />
+      <workItem from="1583517933046" duration="9117000" />
+      <workItem from="1583642816220" duration="8683000" />
     </task>
     <servers />
   </component>
@@ -140,6 +144,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583543475182" />
+    <state x="646" y="236" width="627" height="568" key="find.popup" timestamp="1583644620705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="236" width="627" height="568" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583644620705" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1583432297340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

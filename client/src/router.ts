@@ -17,7 +17,12 @@ export const createRouter = (): Router => {
                 path: '/dashboard/settings',
                 component: () => import('@/pages/dashboard/Settings.vue'),
             },
-            { name: 'upload', path: '/dashboard/upload', component: () => import('@/pages/dashboard/Upload.vue') },
+            {
+                name: 'upload',
+                path: '/dashboard/upload',
+                component: () => import('@/pages/dashboard/Dashboard.vue'),
+                props: { upload: true },
+            },
         ],
     });
 };

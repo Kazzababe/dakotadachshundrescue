@@ -1,9 +1,18 @@
 <template>
     <div class="container">
         <input
+            v-if="type !== 'textarea'"
             ref="input"
             class="input"
             :type="type"
+            :placeholder="placeholder"
+            :value="content"
+            @input="updateValue($event.target.value)"
+        />
+        <textarea
+            v-else
+            ref="input"
+            class="input"
             :placeholder="placeholder"
             :value="content"
             @input="updateValue($event.target.value)"
@@ -20,7 +29,7 @@
 
             font-size: 1rem;
 
-            background-color: hsl(0, 0%, 98%);
+            background-color: hsl(0, 0%, 95%);
             border: none;
             border-radius: 4px;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19) inset;
