@@ -4,9 +4,9 @@ import Router from 'vue-router';
 import { createRouter } from './router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faImage, faFileAlt, faFileArchive, faFileCode } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faTimes);
+library.add(faTimes, faImage, faFileAlt, faFileArchive, faFileCode);
 
 Vue.component('fa-icon', FontAwesomeIcon);
 Vue.component('cc-input', () => import('@/components/structure/input/Input.vue'));

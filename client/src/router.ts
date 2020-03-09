@@ -23,6 +23,12 @@ export const createRouter = (): Router => {
                 component: () => import('@/pages/dashboard/Dashboard.vue'),
                 props: { upload: true },
             },
+            {
+                name: 'upload:stage',
+                path: '/dashboard/upload/:stage',
+                component: () => import('@/pages/dashboard/Dashboard.vue'),
+                props: { default: true, upload: true },
+            },
         ],
     });
 };

@@ -1,6 +1,6 @@
 <template>
-    <router-link v-if="href" :to="href" class="button"><slot /></router-link>
-    <button v-else class="button" :class="variant" :type="type"><slot /></button>
+    <router-link v-if="href" :to="href" class="button" @click="$emit('click', $event)"><slot /></router-link>
+    <button v-else class="button" :class="variant" :type="type" @click="$emit('click', $event)"><slot /></button>
 </template>
 
 <style lang="scss" scoped>
@@ -17,6 +17,7 @@
 
         &.default {
             font-family: 'Sims Sans', sans-serif;
+            font-size: 0.85rem;
             font-weight: bold;
             text-transform: uppercase;
 

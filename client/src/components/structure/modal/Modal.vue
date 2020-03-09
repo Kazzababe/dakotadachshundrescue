@@ -19,17 +19,21 @@
 </template>
 
 <style lang="scss" scoped>
-    .slide-enter-active, .slide-leave-active {
+    .slide-enter-active,
+    .slide-leave-active {
         transition: all 0.4s;
     }
-    .slide-enter, .slide-leave-to {
+    .slide-enter,
+    .slide-leave-to {
         margin-top: -20px;
         opacity: 0;
     }
-    .fade-enter-active, .fade-leave-active {
+    .fade-enter-active,
+    .fade-leave-active {
         transition: opacity 0.2s;
     }
-    .fade-enter, .fade-leave-to {
+    .fade-enter,
+    .fade-leave-to {
         opacity: 0;
     }
 
@@ -48,11 +52,11 @@
         > .modal-container {
             position: absolute;
             left: 50%;
-            top: 25%;
+            top: 50%;
 
             min-width: 600px;
 
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
 
             > .modal {
                 background-color: white;
@@ -61,7 +65,7 @@
 
                 > header {
                     display: flex;
-                    padding:  1rem;
+                    padding: 1rem;
 
                     border-bottom: 1px solid hsl(210, 14%, 89%);
                     color: hsl(222, 14%, 15%);
@@ -81,6 +85,8 @@
                     }
                 }
                 > main {
+                    max-height: 95vh;
+                    max-width: 95vw;
                     padding: 1rem;
                 }
             }
@@ -90,7 +96,7 @@
 
 <script>
     export default {
-        data:() => ({
+        data: () => ({
             visible: false,
         }),
         methods: {
