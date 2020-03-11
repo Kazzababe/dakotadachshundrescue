@@ -34,7 +34,7 @@
         padding: 0 6rem;
 
         background-color: white;
-        box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.1),0 1px 2px 0 hsla(0, 0%, 0%, 0.06) !important;
+        box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.1), 0 1px 2px 0 hsla(0, 0%, 0%, 0.06) !important;
 
         align-items: center;
         justify-content: space-between;

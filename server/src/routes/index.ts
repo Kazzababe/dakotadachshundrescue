@@ -35,6 +35,7 @@ const routes = [
     { path: '/dashboard', data: getDashboardData },
     { path: '/dashboard/settings', data: getSettingsData },
     { path: '/dashboard/upload', data: getUploadData },
+    { path: '/dashboard/upload/:stage', data: getUploadData },
 ];
 
 async function getData(req: Request, route: any) {

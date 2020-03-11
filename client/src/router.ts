@@ -21,7 +21,13 @@ export const createRouter = (): Router => {
                 name: 'upload',
                 path: '/dashboard/upload',
                 component: () => import('@/pages/dashboard/Dashboard.vue'),
-                props: { upload: true },
+                props: { stage: 'redirect' },
+            },
+            {
+                name: 'upload:stage',
+                path: '/dashboard/upload/:stage',
+                component: () => import('@/pages/dashboard/Dashboard.vue'),
+                props: true,
             },
         ],
     });
