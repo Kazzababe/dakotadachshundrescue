@@ -3,12 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="c968eeb8-1e88-40d1-aa40-dc3d0956d818" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/client/src/components/structure/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/Topnav.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/structure/button/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/button/Button.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/structure/modal/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/modal/Modal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/upload/UploadModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/upload/UploadModal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.ts" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/structure/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/Topnav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/structure/modal/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/structure/modal/Modal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/upload/UploadModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/upload/UploadModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/dashboard/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/build/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/build/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/build/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/server/build/tsconfig.tsbuildinfo" afterDir="false" />
+>>>>>>> a3ef2b059c23c1320e822e228e6e7ff3ffa5ef30
       <change beforePath="$PROJECT_DIR$/server/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +60,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\Rewin\WebstormProjects\Sims Mods\client\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/server/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -101,7 +114,14 @@
       <workItem from="1583396353526" duration="586000" />
       <workItem from="1583454208696" duration="13630000" />
       <workItem from="1583517933046" duration="9117000" />
+<<<<<<< HEAD
       <workItem from="1583642816220" duration="17531000" />
+=======
+      <workItem from="1583642816220" duration="8683000" />
+      <workItem from="1583793283663" duration="121000" />
+      <workItem from="1583793427777" duration="248000" />
+      <workItem from="1583794332593" duration="4412000" />
+>>>>>>> a3ef2b059c23c1320e822e228e6e7ff3ffa5ef30
     </task>
     <servers />
   </component>
@@ -139,10 +159,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="767" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583543475182" />
-    <state x="646" y="236" width="627" height="568" key="find.popup" timestamp="1583644620705">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="692" y="266" width="724" height="610" key="find.popup" timestamp="1583795325385">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="646" y="236" width="627" height="568" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583644620705" />
+    <state x="692" y="266" width="724" height="610" key="find.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1583795325385" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1583432297340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

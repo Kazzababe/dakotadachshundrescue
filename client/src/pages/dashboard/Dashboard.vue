@@ -1,7 +1,7 @@
 <template>
     <s-template>
         dashboard {{ upload }}
-        <UploadModal v-if="upload" />
+        <UploadModal v-if="upload" :stage="stage" />
     </s-template>
 </template>
 
@@ -12,10 +12,16 @@
 
     export default {
         props: {
-            upload: {
-                type: Boolean,
-                default: false,
+            stage: {
+                type: String,
+                default: undefined,
             },
+        },
+        data: () => ({
+            upload: false,
+        }),
+        created() {
+            this.upload = this.stage !== undefined;
         },
         components: {
             UploadModal,

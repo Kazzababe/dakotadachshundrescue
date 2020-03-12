@@ -1,0 +1,83 @@
+<template>
+    <div class="stage-container">
+        <cc-input class="input" v-model="title" placeholder="Enter post title..." />
+        <cc-input
+            v-model="description"
+            placeholder="Enter post description..."
+            type="textarea"
+            class="input description"
+        />
+        <div class="category" v-model="category">
+            <select>
+                <option :value="1">Test 1</option>
+                <option :value="2">Test 2</option>
+                <option :value="3">Test 3</option>
+            </select>
+        </div>
+        <cc-button @click="nextStage">Next stage</cc-button>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+    .stage-container {
+        > .description /deep/ textarea {
+            height: 300px;
+
+            resize: none;
+        }
+        .input {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+</style>
+
+<script>
+    let saveTimer;
+
+    export default {
+        data: () => ({
+            title: '',
+            description: '',
+            category: 0,
+        }),
+        mounted() {
+            if (this.$cookies.isKey('title_draft')) {
+                this.title = this.$cookies.get('title_draft');
+            }
+            if (this.$cookies.isKey('description_draft')) {
+                this.description = this.$cookies.get('description_draft');
+            }
+        },
+        destroyed() {},
+        methods: {
+            beginSaveDetails() {
+                if (saveTimer) {
+                    saveTimer = clearTimeout(saveTimer);
+                }
+                saveTimer = setTimeout(this.saveDetails, 2500);
+            },
+            saveDetails() {
+                if (this.title.length > 0) {
+                    this.$cookies.set('title_draft', this.title, '1d');
+                }
+                if (this.description.length > 0) {
+                    this.$cookies.set('description_draft', this.description, '1d');
+                }
+            },
+            nextStage() {
+                this.saveDetails();
+                this.$emit('setStage', 1);
+            },
+        },
+        watch: {
+            title() {
+                this.beginSaveDetails();
+            },
+            description() {
+                this.beginSaveDetails();
+            },
+        },
+    };
+</script>

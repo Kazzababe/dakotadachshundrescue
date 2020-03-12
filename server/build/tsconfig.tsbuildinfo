@@ -486,7 +486,7 @@
         "signature": "5afdacfec9264ce2a73d4f3999ba309e73994eed9b1c61496d8118a26bfe49a3"
       },
       "../src/routes/index.ts": {
-        "version": "d77197aebda326ecf7f6775d707ca74fa9503a031d07b971553ff0e070b3f8cb",
+        "version": "0b98711386f08a69c2f8758c999eca73f15df77c5b7be36c18f67b65388684f0",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../node_modules/@types/redis/ts3.1/index.d.ts": {
@@ -2221,12 +2221,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts": [
         "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
         "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
@@ -2358,6 +2352,12 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -2460,34 +2460,34 @@
       "../node_modules/vue/types/index.d.ts",
       "../node_modules/vue-server-renderer/types/index.d.ts",
       "../src/routes/utils.ts",
-      "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts",
+      "../node_modules/@types/bcrypt/index.d.ts",
+      "../node_modules/@types/redis/ts3.1/index.d.ts",
+      "../src/services/redis.ts",
+      "../node_modules/@types/express-session/index.d.ts",
+      "../node_modules/@types/connect-redis/index.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
+      "../src/routes/index.ts",
       "../node_modules/@types/mysql/lib/connection.d.ts",
-      "../node_modules/@types/mysql/lib/poolconnection.d.ts",
-      "../node_modules/@types/mysql/lib/pool.d.ts",
       "../node_modules/@types/mysql/lib/poolcluster.d.ts",
-      "../node_modules/@types/mysql/index.d.ts",
-      "../node_modules/@types/mysql2/index.d.ts",
-      "../src/data/index.ts",
-      "../node_modules/@types/bcrypt/index.d.ts",
+      "../node_modules/@types/mysql/lib/poolconnection.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
       "../src/interfaces/user.ts",
-      "../src/routes/auth/index.ts",
       "../src/routes/dashboard/index.ts",
       "../src/routes/dashboard/settings.ts",
       "../src/routes/dashboard/upload.ts",
       "../src/routes/browse/index.ts",
-      "../node_modules/@types/redis/ts3.1/index.d.ts",
-      "../src/services/redis.ts",
-      "../node_modules/@types/express-session/index.d.ts",
-      "../src/index.ts",
-      "../node_modules/@types/connect-redis/index.d.ts",
-      "../src/routes/index.ts"
+      "../node_modules/@types/mysql2/promise.d.ts",
+      "../node_modules/@types/mysql/lib/pool.d.ts",
+      "../node_modules/@types/mysql/index.d.ts",
+      "../node_modules/@types/mysql2/index.d.ts",
+      "../src/data/index.ts",
+      "../src/routes/auth/index.ts",
+      "../src/index.ts"
     ]
   },
   "version": "3.8.3"

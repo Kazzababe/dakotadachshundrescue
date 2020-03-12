@@ -1,10 +1,12 @@
 <template>
-    <cc-modal name="upload-modal" @close="onClose">
+    <s-template>
         <template v-slot:header>{{ titles[stage] }}</template>
         <div class="content">
-            <component :is="component" @setStage="setStage" />
+            <keep-alive>
+                <component :is="component" @setStage="setStage" />
+            </keep-alive>
         </div>
-    </cc-modal>
+    </s-template>
 </template>
 
 <style lang="scss" scoped>
@@ -26,20 +28,22 @@
             return {
                 titles: ['Post Details', 'Select images'],
                 currentStage: this.stage ? parseInt(this.stage) : undefined,
+                images: [],
             };
         },
         created() {
             if (this.currentStage < 0 || this.currentStage > 1 || isNaN(this.stage)) {
+                this.$router.push({ path: '/dashboard/upload/0' });
                 this.currentStage = 0;
             }
         },
         methods: {
-            onClose() {
-                window.location.href = '/dashboard';
-            },
             setStage(stage) {
                 this.$router.push({ path: `/dashboard/upload/${stage}` });
                 this.currentStage = stage;
+            },
+            updateImages(images) {
+                this.images = images;
             },
         },
         computed: {

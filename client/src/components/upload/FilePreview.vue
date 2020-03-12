@@ -1,6 +1,12 @@
 <template>
     <div class="container">
-        <div class="icon-container noselect" :class="{ hover }" @mouseenter="hover = true" @mouseleave="hover = false" @click="deleteFile">
+        <div
+            class="icon-container noselect"
+            :class="{ hover }"
+            @mouseenter="hover = true"
+            @mouseleave="hover = false"
+            @click="deleteFile"
+        >
             <fa-icon :icon="hover ? 'times' : type" fixed-width />
         </div>
         <div class="info">
