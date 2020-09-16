@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.wrap = exports.renderVue = exports.getRenderer = void 0;
 const path_1 = require("path");
 const fs_1 = require("fs");
 const vue_server_renderer_1 = require("vue-server-renderer");

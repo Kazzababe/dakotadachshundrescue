@@ -3,15 +3,15 @@ import { getRenderer, wrap } from './utils';
 import { Request, Response } from 'express';
 import serveStatic from 'serve-static';
 import { join } from 'path';
-import auth from './auth';
-import { getDashboardData } from './dashboard';
-import { getSettingsData } from './dashboard/settings';
-import { getUploadData } from './dashboard/upload';
-import { getBrowseData } from './browse';
+import { getHomeData } from './home';
+import createGame, { getCreateData } from './create';
+import joinGame, { getJoinData } from './join';
+import {getGameData} from "./game";
 
 const router = Router();
 
-router.use('/auth', auth);
+router.use(joinGame);
+router.use(createGame);
 
 router.use('/dist', serveStatic(join(process.cwd(), '..', 'client', 'dist')));
 router.use(
@@ -19,30 +19,19 @@ router.use(
     serveStatic(join(process.cwd(), '..', 'client', 'public'))
 );
 
-function getHomeData(req: Request) {
-    return req.session
-        ? {
-              user: req.session.user,
-          }
-        : {};
-}
 
 const routes = [
     { path: '/', data: getHomeData },
-    { path: '/auth/login' },
-    { path: '/auth/register' },
-    { path: '/browse', data: getBrowseData },
-    { path: '/dashboard', data: getDashboardData },
-    { path: '/dashboard/settings', data: getSettingsData },
-    { path: '/dashboard/upload', data: getUploadData },
-    { path: '/dashboard/upload/:stage', data: getUploadData },
+    { path: '/create', data: getCreateData },
+    { path: '/join', data: getJoinData },
+    { path: '/game/:code', data: getGameData },
 ];
 
 async function getData(req: Request, route: any) {
     const data = route.data;
 
     if (!data) {
-        return {};
+        return undefined;
     }
     return await data(req);
 }
@@ -56,6 +45,9 @@ for (const key in routes) {
             async (req: Request, res: Response): Promise<void> => {
                 const data = await getData(req, route);
 
+                if (!data) {
+                    return res.redirect('/');
+                }
                 const stream = await getRenderer().renderToString({
                     state: data,
                     url: req.url,
@@ -66,7 +58,7 @@ for (const key in routes) {
     );
 
     router.get(
-        '/data' + route.path,
+        '/data-' + route.path,
         wrap(
             async (req: Request, res: Response): Promise<void> => {
                 const data = await getData(req, route);

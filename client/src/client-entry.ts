@@ -7,7 +7,7 @@ const { app, router } = createApp(anyWindow.__INITIAL_STATE__ || {});
 // this assumes App.vue template root element has `id="app"`
 router.onReady(() => {
     router.beforeResolve((to, from, next) => {
-        fetch('/data' + to.fullPath, {
+        fetch('/data-' + to.fullPath, {
             method: 'GET',
             credentials: 'include',
         })
