@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createGame = exports.getGame = exports.games = void 0;
+exports.updateConnections = exports.createGame = exports.getGame = exports.games = void 0;
 const express_1 = __importDefault(require("express"));
 const routes_1 = __importDefault(require("./routes"));
 const body_parser_1 = __importDefault(require("body-parser"));
@@ -14,6 +14,7 @@ const ws_1 = require("ws");
 const http_1 = require("http");
 const RedisStore = require('connect-redis')(express_session_1.default);
 const gameDebug = require('debug')('Server:Game');
+const connections = {};
 exports.games = [];
 function getGame(code) {
     for (let i in exports.games) {
@@ -38,6 +39,19 @@ function createGame(code, host) {
     });
 }
 exports.createGame = createGame;
+function updateConnections(game) {
+    for (let i in connections) {
+        const connection = connections[i];
+        if (connection.game.code === game.code) {
+            connection.client.send(JSON.stringify({
+                page: 'GAME',
+                message: 'UPDATE',
+                game,
+            }));
+        }
+    }
+}
+exports.updateConnections = updateConnections;
 const app = express_1.default();
 app.use(express_session_1.default({
     store: new RedisStore({ client: redis_1.default }),
@@ -51,7 +65,6 @@ app.use(routes_1.default);
 data_1.setupDatabase().then(() => {
     const server = http_1.createServer(app);
     const socketServer = new ws_1.Server({ server });
-    const connections = {};
     socketServer.on('connection', (ws) => {
         let username;
         let code;

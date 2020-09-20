@@ -8,11 +8,12 @@ import { Server } from 'ws';
 import { createServer } from 'http';
 const RedisStore = require('connect-redis')(session);
 const gameDebug = require('debug')('Server:Game');
+const connections: { [key: string]: any } = {};
 
 export const games: {
     code: string,
     host: string,
-    phase: 0,
+    phase: number,
     players: {
         name: string,
     }[],
@@ -41,6 +42,18 @@ export function createGame(code: string, host: string) {
         connectedPlayers: [],
     });
 }
+export function updateConnections(game: any) {
+    for (let i in connections) {
+        const connection = connections[i];
+        if (connection.game.code === game.code) {
+            connection.client.send(JSON.stringify({
+                page: 'GAME',
+                message: 'UPDATE',
+                game,
+            }));
+        }
+    }
+}
 
 const app: Express = express();
 
@@ -61,7 +74,6 @@ app.use(routes);
 setupDatabase().then(() => {
     const server = createServer(app);
     const socketServer = new Server({ server });
-    const connections: { [key: string]: any } = {};
 
     socketServer.on('connection', (ws) => {
         let username: string;

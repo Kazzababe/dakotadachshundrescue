@@ -29,10 +29,11 @@ const path_1 = require("path");
 const home_1 = require("./home");
 const create_1 = __importStar(require("./create"));
 const join_1 = __importStar(require("./join"));
-const game_1 = require("./game");
+const game_1 = __importStar(require("./game"));
 const router = express_1.Router();
 router.use(join_1.default);
 router.use(create_1.default);
+router.use(game_1.default);
 router.use('/dist', serve_static_1.default(path_1.join(process.cwd(), '..', 'client', 'dist')));
 router.use('/static', serve_static_1.default(path_1.join(process.cwd(), '..', 'client', 'public')));
 const routes = [

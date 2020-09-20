@@ -16,10 +16,15 @@ export default {
         code: '',
         name: '',
     }),
+    watch: {
+        code(val) {
+            this.code = val.toUpperCase();
+        }
+    },
     methods: {
         joinGame() {
             if (this.code.length !== 4) {
-                alert('code must be 4 characters in length');
+                alert('code must be 4 characters in length \"' + this.code + '\"');
                 return;
             }
             if (this.name.length < 1 || this.name.length > 16) {

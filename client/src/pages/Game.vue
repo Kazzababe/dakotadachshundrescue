@@ -2,6 +2,7 @@
     <standard-template>
         <template v-if="game">
             <Joining :game="game" :username="username" v-if="game.phase === 0"></Joining>
+            <p v-if="game.phase === 1">Game started!</p>
         </template>
     </standard-template>
 </template>
@@ -23,7 +24,7 @@ export default {
         this.game = this.$store.game;
         this.username = this.$store.username;
 
-        const socket = new WebSocket('ws://localhost:3000');
+        const socket = new WebSocket('ws://' + window.location.host);
         socket.addEventListener('open', (event) => {
             socket.send(JSON.stringify({
                 page: 'GAME',
@@ -37,7 +38,6 @@ export default {
             if (data.page === 'GAME') {
                 if (data.message === 'UPDATE') {
                     this.game = data.game;
-                    console.log('new player');
                 }
                 if (data.message === 'ping') {
                     socket.send(JSON.stringify({
