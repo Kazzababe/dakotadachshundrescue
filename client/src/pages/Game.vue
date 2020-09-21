@@ -10,7 +10,7 @@
 <style lang="scss" scoped></style>
 
 <script>
-import Joining from '@/components/game/Joining.vue';
+import Joining from '@/components/game/client/Joining.vue';
 
 export default {
     components: {

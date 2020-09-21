@@ -1,22 +1,17 @@
 <template>
-    <div v-if="game">
-        <p>game code {{ game.code }}</p>
-        <p>{{ game.host === username ? 'You are the host' : game.host + ' is the host' }}</p>
-        <p>username {{ username }}</p>
-        <p>players in game: {{ game.players.length }}</p>
-        <div v-if="username === game.host">
-            <form @submit.prevent="startGame">
-                <button type="submit">Everybody's in, start the game!</button>
-            </form>
-        </div>
+    <div>
+        <h2>Code = {{ game.code }}</h2>
+        <h2>Players in game: {{ Object.keys(game.players).length }}</h2>
+        <form @submit.prevent="startGame">
+            <button type="submit">Everybody's in!</button>
+        </form>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        game: {},
-        username: String,
+        game: Object,
     },
     methods: {
         startGame() {
@@ -27,7 +22,6 @@ export default {
                 },
                 body: JSON.stringify({
                     code: this.game.code,
-                    name: this.username,
                 })
             })
                 .then((res) => res.json())

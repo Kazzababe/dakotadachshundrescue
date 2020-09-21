@@ -4,14 +4,13 @@ import { Request, Response } from 'express';
 import serveStatic from 'serve-static';
 import { join } from 'path';
 import { getHomeData } from './home';
-import createGame, { getCreateData } from './create';
+import { getCreateData } from './create';
 import joinGame, { getJoinData } from './join';
 import game, { getGameData } from "./game";
 
 const router = Router();
 
 router.use(joinGame);
-router.use(createGame);
 router.use(game);
 
 router.use('/dist', serveStatic(join(process.cwd(), '..', 'client', 'dist')));

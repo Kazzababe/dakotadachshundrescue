@@ -1,43 +1,56 @@
 <template>
     <standard-template>
-        <form @submit.prevent="createGame">
-            <input type="text" v-model="name" placeholder="Username..." />
-            <button type="submit">Create game</button>
-        </form>
+        <Joining v-if="game && game.phase === 0" :game="game"></Joining>
+        <Playing v-else-if="game && game.phase === 1" :game="game"></Playing>
     </standard-template>
 </template>
 
 <style lang="scss" scoped></style>
 
 <script>
+import Joining from '@/components/game/host/Joining.vue';
+import Playing from '@/components/game/host/Playing.vue';
+
 export default {
+    components: {
+        Joining,
+        Playing,
+    },
     data: () => ({
-        name: '',
+        game: undefined,
     }),
-    methods: {
-        createGame() {
-            if (this.name.length < 1 || this.name.length > 16) {
-                alert('name must be between 1-16 characters');
-                return;
+    mounted() {
+        this.code = this.$store.code;
+
+        const socket = new WebSocket('ws://' + window.location.host);
+        socket.addEventListener('open', (event) => {
+            socket.send(JSON.stringify({
+                page: 'CREATE',
+                message: 'new',
+                code: this.code,
+            }));
+        });
+        socket.addEventListener('message', (event) => {
+            const data = JSON.parse(event.data);
+            if (data.page === 'CREATE') {
+                if (data.message === 'data') {
+                    this.game = data.game;
+                } else if (data.message === 'error') {
+                    alert(data.error);
+                } else if (data.message === 'UPDATE') {
+                    this.game = data.game;
+                } else if (data.message === 'ping') {
+                    socket.send(JSON.stringify({
+                        page: 'GAME',
+                        message: 'pong',
+                    }));
+                }
             }
-            fetch('/create', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    code: this.code,
-                    name: this.name,
-                })
-            })
-                .then((res) => res.json())
-                .then((res) => {
-                    if (res.code !== 100) {
-                        alert(res.message);
-                        return;
-                    }
-                    window.location.href = res.url;
-                });
+        });
+    },
+    methods: {
+        startGame() {
+
         },
     },
 };

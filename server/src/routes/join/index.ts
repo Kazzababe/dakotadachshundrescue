@@ -1,6 +1,6 @@
 import { Router, Response, Request } from "express";
 import { wrap } from "../utils";
-import { getGame } from '../../index';
+import { getGame } from '../../services/game';
 
 const router = Router();
 
