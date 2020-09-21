@@ -2,7 +2,7 @@
     <standard-template>
         <template v-if="game">
             <Joining :game="game" :username="username" v-if="game.phase === 0"></Joining>
-            <p v-if="game.phase === 1">Game started!</p>
+            <Playing :game="game" :username="username" v-else-if="game.phase === 1">Game started!</Playing>
         </template>
     </standard-template>
 </template>
@@ -11,10 +11,12 @@
 
 <script>
 import Joining from '@/components/game/client/Joining.vue';
+import Playing from '@/components/game/client/Playing.vue';
 
 export default {
     components: {
         Joining,
+        Playing,
     },
     data: () => ({
         game: undefined,
@@ -47,6 +49,7 @@ export default {
                 }
             }
         });
+        window.socket = socket;
     },
 };
 </script>

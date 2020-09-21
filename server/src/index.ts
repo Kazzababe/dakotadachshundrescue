@@ -62,6 +62,9 @@ setupDatabase()
                         game.connectPlayer(username, ws);
                     } else if (data.message === 'pong') {
                         clearTimeout(timer);
+                    } else if (data.message === 'SELECT_CATEGORY') {
+                        console.log("select category");
+                        game.selectCategory(data.index);
                     }
                 } else if (data.page === 'CREATE') {
                     if (data.message === 'new') {

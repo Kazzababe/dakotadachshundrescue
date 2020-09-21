@@ -39,7 +39,7 @@ router.post(
                 });
             }
             const players = Object.keys(game.players).length;
-            if (players < 2 || players > 8) {
+            if (players < 1 || players > 8) {
                 return res.json({
                     code: 108,
                     message: 'Invalid amount of players. Each game requires 2-8 players.',

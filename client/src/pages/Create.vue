@@ -20,14 +20,12 @@ export default {
         game: undefined,
     }),
     mounted() {
-        this.code = this.$store.code;
-
         const socket = new WebSocket('ws://' + window.location.host);
         socket.addEventListener('open', (event) => {
             socket.send(JSON.stringify({
                 page: 'CREATE',
                 message: 'new',
-                code: this.code,
+                code: this.$store.code,
             }));
         });
         socket.addEventListener('message', (event) => {
@@ -47,6 +45,7 @@ export default {
                 }
             }
         });
+        window.socket = socket;
     },
     methods: {
         startGame() {
