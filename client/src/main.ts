@@ -4,10 +4,11 @@ import Router from 'vue-router';
 import { createRouter } from './router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import VueCookies from 'vue-cookies';
+import { faMehBlank, faMehRollingEyes, faSadCry, faSmileBeam, faSurprise, faGrinSquintTears, faGrinHearts, faAngry } from '@fortawesome/free-regular-svg-icons';
 
-library.add(faTimes);
+library.add(faTimes, faArrowLeft, faMehBlank, faMehRollingEyes, faSadCry, faSmileBeam, faSurprise, faGrinSquintTears, faGrinHearts, faAngry);
 
 Vue.use(VueCookies);
 

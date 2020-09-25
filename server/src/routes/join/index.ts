@@ -1,6 +1,6 @@
 import { Router, Response, Request } from "express";
 import { wrap } from "../utils";
-import { getGame } from '../../services/game';
+import { generateUserId, getGame } from '../../services/game';
 
 const router = Router();
 
@@ -22,7 +22,7 @@ router.post(
                 message: 'Game could not be found.'
             });
         }
-        if (!name || name.length < 1 || name.length > 16) {
+        if (!name || name.length < 1 || name.length > 12) {
             return res.json({
                 code: 103,
                 message: 'Invalid username.',
@@ -30,7 +30,8 @@ router.post(
         }
         if (req && req.session) {
             req.session.user = {
-                name,
+                id: generateUserId(),
+                username: name,
             };
             return res.json({
                 code: 100,

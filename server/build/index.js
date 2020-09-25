@@ -29,13 +29,20 @@ data_1.setupDatabase()
     const server = http_1.createServer(app);
     const socketServer = new ws_1.Server({ server });
     socketServer.on('connection', (ws) => {
-        let username;
+        let userId;
         let game;
         let timer;
         let pingTimer;
         function onClose() {
             clearInterval(pingTimer);
-            game.disconnectPlayer(username);
+            if (game) {
+                if (ws === game.host) {
+                    game.forceEnd();
+                }
+                else {
+                    game.disconnectPlayer(userId);
+                }
+            }
         }
         function ping() {
             ws.send(JSON.stringify({
@@ -49,16 +56,18 @@ data_1.setupDatabase()
             if (data.page === 'GAME') {
                 if (data.message === 'JOIN') {
                     pingTimer = setInterval(ping, 1000 * 10);
-                    username = data.username;
+                    userId = data.id;
                     game = game_1.getGame(data.game.code);
-                    game.connectPlayer(username, ws);
+                    game === null || game === void 0 ? void 0 : game.connectPlayer(userId, data.username, ws);
                 }
                 else if (data.message === 'pong') {
                     clearTimeout(timer);
                 }
                 else if (data.message === 'SELECT_CATEGORY') {
-                    console.log("select category");
-                    game.selectCategory(data.index);
+                    game === null || game === void 0 ? void 0 : game.selectCategory(data.index);
+                }
+                else if (data.message === 'SELECT_ANSWER') {
+                    game === null || game === void 0 ? void 0 : game.selectAnswer(userId, data.answer);
                 }
             }
             else if (data.page === 'CREATE') {

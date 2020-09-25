@@ -32,7 +32,7 @@ setupDatabase()
         const socketServer = new Server({ server });
 
         socketServer.on('connection', (ws: WebSocket) => {
-            let username: string;
+            let userId: string;
             let game: ServerGame;
             let timer: ReturnType<typeof setTimeout>;
             let pingTimer: ReturnType<typeof setInterval>;
@@ -40,7 +40,13 @@ setupDatabase()
             function onClose() {
                 clearInterval(pingTimer);
 
-                game.disconnectPlayer(username);
+                if (game) {
+                    if (ws === game.host) {
+                        game.forceEnd();
+                    } else {
+                        game.disconnectPlayer(userId);
+                    }
+                }
             }
             function ping() {
                 ws.send(
@@ -57,14 +63,15 @@ setupDatabase()
                     if (data.message === 'JOIN') {
                         pingTimer = setInterval(ping, 1000 * 10);
 
-                        username = data.username;
+                        userId = data.id;
                         game = getGame(data.game.code);
-                        game.connectPlayer(username, ws);
+                        game?.connectPlayer(userId, data.username, ws);
                     } else if (data.message === 'pong') {
                         clearTimeout(timer);
                     } else if (data.message === 'SELECT_CATEGORY') {
-                        console.log("select category");
-                        game.selectCategory(data.index);
+                        game?.selectCategory(data.index);
+                    } else if (data.message === 'SELECT_ANSWER') {
+                        game?.selectAnswer(userId, data.answer);
                     }
                 } else if (data.page === 'CREATE') {
                     if (data.message === 'new') {

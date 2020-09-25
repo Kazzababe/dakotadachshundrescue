@@ -2,6 +2,7 @@
     <standard-template>
         <Joining v-if="game && game.phase === 0" :game="game"></Joining>
         <Playing v-else-if="game && game.phase === 1" :game="game"></Playing>
+        <Winner v-else-if="game && game.phase === 2" :game="game"></Winner>
     </standard-template>
 </template>
 
@@ -10,11 +11,13 @@
 <script>
 import Joining from '@/components/game/host/Joining.vue';
 import Playing from '@/components/game/host/Playing.vue';
+import Winner from '@/components/game/host/Winner.vue';
 
 export default {
     components: {
         Joining,
         Playing,
+        Winner,
     },
     data: () => ({
         game: undefined,
@@ -37,7 +40,9 @@ export default {
                     alert(data.error);
                 } else if (data.message === 'UPDATE') {
                     this.game = data.game;
-                } else if (data.message === 'ping') {
+                }
+            } else if (data.page === 'GAME') {
+                if (data.message === 'ping') {
                     socket.send(JSON.stringify({
                         page: 'GAME',
                         message: 'pong',

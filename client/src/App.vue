@@ -13,7 +13,7 @@
 
 <style lang="scss">
     :root {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Fjalla One', sans-serif;
         font-size: 16px;
     }
     html,

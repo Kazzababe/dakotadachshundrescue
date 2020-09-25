@@ -27,6 +27,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.7",
     "@types/webpack-env": "^1.14.1",
     "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
     "js-cookie": "^2.2.1",
     "prettier": "^1.18.2",
     "remarkable": "^2.0.0",

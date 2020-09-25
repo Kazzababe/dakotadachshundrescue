@@ -10,8 +10,9 @@ export function getGameData(req: Request) {
         const game = getGame(req.params.code);
         if (game) {
             return {
-                game,
-                username: req.session.user.name
+                game: new ClientGame(game),
+                id: req.session.user.id,
+                username: req.session.user.username,
             }
         }
     }
@@ -42,7 +43,7 @@ router.post(
             if (players < 1 || players > 8) {
                 return res.json({
                     code: 108,
-                    message: 'Invalid amount of players. Each game requires 2-8 players.',
+                    message: 'Invalid amount of players. Each game requires 1-8 players.',
                 });
             }
             game.start();
