@@ -6,6 +6,6 @@ exports.default = {
         host: 'localhost',
         user: 'root',
         password: 'password',
-        database: 'majorityrules',
+        database: 'dakotadachshund',
     },
 };

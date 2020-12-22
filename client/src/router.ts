@@ -8,9 +8,6 @@ export const createRouter = (): Router => {
         mode: 'history',
         routes: [
             { name: 'home', path: '/', component: () => import('@/pages/Home.vue') },
-            { name: 'create', path: '/create', component: () => import('@/pages/Create.vue') },
-            { name: 'join', path: '/join', component: () => import('@/pages/Join.vue') },
-            { name: 'game', path: '/game/:code', component: () => import('@/pages/Game.vue') },
         ],
     });
 };

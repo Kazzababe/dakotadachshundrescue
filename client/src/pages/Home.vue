@@ -1,89 +1,79 @@
 <template>
-    <standard-template class="template">
-        <header class="brand-header">
-            <h1>MAJORITY</h1>
-            <h1>RULES</h1>
-        </header>
-        <section class="links-section">
-            <div class="links">
-                <router-link to="create">CREATE A GAME</router-link>
-                <router-link to="join">JOIN A GAME</router-link>
+    <standard-template>
+        <header>
+            <PrimaryNavigation />
+            <div class="attention">
+                <div class="brand-info">
+                    <h3 class="title headline">ADOPT TODAY.</h3>
+                    <h3 class="title">FIND YOUR NEW BEST FRIEND.</h3>
+                    <p class="description">
+                        They're more than just a pet, they're your family.
+                    </p>
+                </div>
             </div>
-        </section>
+        </header>
     </standard-template>
 </template>
 
 <style lang="scss" scoped>
-.template {
+header {
     display: flex;
+    height: 100vh;
+
     flex-direction: column;
-}
-.brand-header {
-    padding: 3rem;
 
-    text-align: center;
+    background-color: #ffffff;
 
-    background-color: #2ecc71;
-    border-bottom: 2px solid #27ae60;
-
-    > h1 {
-        margin: 0;
-
-        font-family: 'Londrina Solid', cursive;
-        font-size: 2.5rem;
-        letter-spacing: 1px;
-        -webkit-text-stroke: 1px black;
-
-        color: white;
-    }
-}
-.links-section {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex: 1;
-
-    align-items: center;
-    justify-content: center;
-
-    > .links {
-        position: absolute;
-        top: 33%;
-        left: 50%;
-
+    > .attention {
         display: flex;
-        flex-direction: column;
+        padding: 0 10vw;
 
-        align-items: center;
-        transform: translate(-50%, -50%);
+        flex: auto;
+        flex-direction: row;
+        justify-content: space-between;
 
-        > a {
-            width: 10rem;
-            padding: 1rem;
-            margin-bottom: 1rem;
+        background-image: url('/static/dachshund-2.png');
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-size: auto 100%;
 
-            font-family: 'Londrina Solid', cursive;
-            font-size: 1.5rem;
-            text-decoration: none;
-            -webkit-text-stroke: 1px black;
+        > .brand-info {
+            display: flex;
+            max-width: 65%;
 
-            background-color: #2ecc71;
-            border: 2px solid #27ae60;
-            color: white;
-            outline: none;
+            flex-direction: column;
+            justify-content: center;
 
-            cursor: pointer;
+            > .title {
+                margin: 0;
+
+                font-family: 'Playfair Display', serif;
+                font-size: 5rem;
+
+                align-self: flex-start;
+
+                &.headline {
+                    color: #0abde3;
+                }
+            }
+            > .description {
+                margin: 3rem 0 0;
+
+                font-size: 2rem;
+
+                color: #818181;
+            }
         }
     }
 }
 </style>
 
 <script>
-    export default {
-        mounted() {
+import PrimaryNavigation from "@/components/structure/PrimaryNavigation";
 
-        },
-    };
+export default {
+    components: {
+        PrimaryNavigation,
+    },
+};
 </script>

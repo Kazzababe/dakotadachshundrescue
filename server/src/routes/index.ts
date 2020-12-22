@@ -4,14 +4,8 @@ import { Request, Response } from 'express';
 import serveStatic from 'serve-static';
 import { join } from 'path';
 import { getHomeData } from './home';
-import { getCreateData } from './create';
-import joinGame, { getJoinData } from './join';
-import game, { getGameData } from "./game";
 
 const router = Router();
-
-router.use(joinGame);
-router.use(game);
 
 router.use('/dist', serveStatic(join(process.cwd(), '..', 'client', 'dist')));
 router.use(
@@ -22,9 +16,6 @@ router.use(
 
 const routes = [
     { path: '/', data: getHomeData },
-    { path: '/create', data: getCreateData },
-    { path: '/join', data: getJoinData },
-    { path: '/game/:code', data: getGameData },
 ];
 
 async function getData(req: Request, route: any) {

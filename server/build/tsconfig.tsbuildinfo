@@ -202,7 +202,7 @@
         "affectsGlobalScope": true
       },
       "../src/config.ts": {
-        "version": "9ecf836cbf836224d89e572fbec22f7a81741548063274943ff620847193793c",
+        "version": "1bb6067f462668aedf92f629d2662de5d79bff0553521b2eb10fb828da1d7b5a",
         "signature": "3e6d882f6368cb89340fafa764d1aa413484887c4341cd813c4f86d18b9147c5",
         "affectsGlobalScope": false
       },
@@ -551,48 +551,8 @@
         "signature": "f458cdfde97452871e3313f0470867ee36c5f3fad439bc9c9c5e0ce267fb2ec9",
         "affectsGlobalScope": false
       },
-      "../src/routes/create/index.ts": {
-        "version": "d9bd5d4d9936359c1b8a9e509d4e4dcf97ad7e1aba603cd1b830b559cb74ac84",
-        "signature": "d09577535ada028d9fdb3328a9c4bbaf738bb8c135ae73fcb070c8d85585eacb",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/ws/index.d.ts": {
-        "version": "81361d2b8ba5b6bae26d65a42c01cb163e49dc626fd5c151b8b337f5d44d3bf8",
-        "signature": "81361d2b8ba5b6bae26d65a42c01cb163e49dc626fd5c151b8b337f5d44d3bf8",
-        "affectsGlobalScope": false
-      },
-      "../src/interfaces/Player.ts": {
-        "version": "fef136181fc43133a0b1bc1dd583b4c97f126cd6b540a0a96e2db13ee635b47f",
-        "signature": "ee72614f071447dd974746bfd480a244d1c548273e7514b5a728273d6bf0e0c2",
-        "affectsGlobalScope": false
-      },
-      "../src/data/questions.ts": {
-        "version": "d75b5f1450ea72aa37e39c5aeca4d424789af671474418044ddec971cbf19e76",
-        "signature": "60a9123e9348fa8a63455156a0df69c09c1376778b01723289b8b2c328cfc686",
-        "affectsGlobalScope": false
-      },
-      "../src/interfaces/Game.ts": {
-        "version": "c4143c55587aa93a6068acf6f535108a570cdfebc0f8e5bd61265deeb3bb0968",
-        "signature": "3778ebc788708be6e7c811365903ed790005eb497988727e4631980a9c7d7761",
-        "affectsGlobalScope": false
-      },
-      "../src/services/game.ts": {
-        "version": "61c57ac6f6b0fdbf26745c2af63bdb847294bc3459a42e88459be07d0c465539",
-        "signature": "90828297f937ab6024b70ff03c2fa4f3ab3a0c4f3ddad53f269877dfb79b5e86",
-        "affectsGlobalScope": false
-      },
-      "../src/routes/join/index.ts": {
-        "version": "31dea0bb377277e4b75b5e740001d7f9365a0eee39816d835d3ac2bda5903b4e",
-        "signature": "61b47a252bc7ed17dc59021ac4200166f8019505a2269f76d40a66ab9c9c8ac6",
-        "affectsGlobalScope": false
-      },
-      "../src/routes/game/index.ts": {
-        "version": "eb6f4e244b7c24a273c552eacc1221ee7b0f8d38f0acce9143d8f7a4ec45fa64",
-        "signature": "12b0dd684dd57a4dfb5d874509a099968baa2760cf82099940dd76e37203383b",
-        "affectsGlobalScope": false
-      },
       "../src/routes/index.ts": {
-        "version": "fc8f6b4ce7b4a7a52d1a153104cb5b5027ea596d0f45cd2c7c8ca972c224607f",
+        "version": "2826fd5818ff5f8ecfcb18e0b30e896a386a7c193a2263e0d21a029b9325cd9b",
         "signature": "c106970ee4b686b5ebf0964ea4e0d1b2af02bdecd2d5cfeecedeb7bb5b2f404b",
         "affectsGlobalScope": false
       },
@@ -687,13 +647,8 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "5bcb06719649b7aa680d356d6367db58caf1b26a0a1209729ff83cb861809557",
+        "version": "c1b6ef47287db0520baba7333cee860055c63283e0e6f8d336c4c51793eefd50",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/interfaces/User.ts": {
-        "version": "6aafe0b6f1e10fc537a96767505d063077e060d771987022551c1c368f6ee878",
-        "signature": "6aafe0b6f1e10fc537a96767505d063077e060d771987022551c1c368f6ee878",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/bcrypt/index.d.ts": {
@@ -704,6 +659,11 @@
       "../node_modules/@types/connect-redis/index.d.ts": {
         "version": "94d232890098944cf1d2faadb8a01230c7fbcbe6ecab322868c33856d1a9e551",
         "signature": "94d232890098944cf1d2faadb8a01230c7fbcbe6ecab322868c33856d1a9e551",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/ws/index.d.ts": {
+        "version": "81361d2b8ba5b6bae26d65a42c01cb163e49dc626fd5c151b8b337f5d44d3bf8",
+        "signature": "81361d2b8ba5b6bae26d65a42c01cb163e49dc626fd5c151b8b337f5d44d3bf8",
         "affectsGlobalScope": false
       }
     },
@@ -1923,82 +1883,19 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/config.ts"
       ],
-      "../src/data/questions.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
       "../src/index.ts": [
         "../node_modules/@types/body-parser/index.d.ts",
         "../node_modules/@types/express-session/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/http.d.ts",
         "../node_modules/@types/node/process.d.ts",
         "../node_modules/@types/node/ts3.1/fs.d.ts",
         "../node_modules/@types/node/ts3.1/process.d.ts",
         "../node_modules/@types/node/ts3.1/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/ws/index.d.ts",
         "../src/data/index.ts",
-        "../src/interfaces/Game.ts",
         "../src/routes/index.ts",
-        "../src/services/game.ts",
         "../src/services/redis.ts"
-      ],
-      "../src/interfaces/Game.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/ws/index.d.ts",
-        "../src/data/questions.ts",
-        "../src/interfaces/Player.ts",
-        "../src/services/game.ts"
-      ],
-      "../src/interfaces/Player.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/ws/index.d.ts",
-        "../src/interfaces/Game.ts"
-      ],
-      "../src/interfaces/User.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/routes/create/index.ts": [
-        "../node_modules/@types/express/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/routes/game/index.ts": [
-        "../node_modules/@types/express/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../src/interfaces/Game.ts",
-        "../src/routes/utils.ts",
-        "../src/services/game.ts"
       ],
       "../src/routes/home/index.ts": [
         "../node_modules/@types/express/index.d.ts",
@@ -2019,22 +1916,8 @@
         "../node_modules/@types/node/ts3.1/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/serve-static/index.d.ts",
-        "../src/routes/create/index.ts",
-        "../src/routes/game/index.ts",
         "../src/routes/home/index.ts",
-        "../src/routes/join/index.ts",
         "../src/routes/utils.ts"
-      ],
-      "../src/routes/join/index.ts": [
-        "../node_modules/@types/express/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../src/routes/utils.ts",
-        "../src/services/game.ts"
       ],
       "../src/routes/utils.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts",
@@ -2047,15 +1930,6 @@
         "../node_modules/@types/node/ts3.1/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/vue-server-renderer/types/index.d.ts"
-      ],
-      "../src/services/game.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/process.d.ts",
-        "../node_modules/@types/node/ts3.1/fs.d.ts",
-        "../node_modules/@types/node/ts3.1/process.d.ts",
-        "../node_modules/@types/node/ts3.1/util.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../src/interfaces/Game.ts"
       ],
       "../src/services/redis.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -3253,39 +3127,16 @@
       "../src/data/index.ts": [
         "../node_modules/@types/mysql2/promise.d.ts"
       ],
-      "../src/interfaces/Game.ts": [
-        "../node_modules/@types/ws/index.d.ts",
-        "../src/interfaces/Player.ts"
-      ],
-      "../src/interfaces/Player.ts": [
-        "../node_modules/@types/ws/index.d.ts",
-        "../src/interfaces/Game.ts"
-      ],
-      "../src/routes/create/index.ts": [
-        "../node_modules/@types/express/index.d.ts"
-      ],
-      "../src/routes/game/index.ts": [
-        "../node_modules/@types/express-serve-static-core/index.d.ts",
-        "../node_modules/@types/express/index.d.ts",
-        "../src/interfaces/Game.ts"
-      ],
       "../src/routes/home/index.ts": [
         "../node_modules/@types/express/index.d.ts"
       ],
       "../src/routes/index.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ],
-      "../src/routes/join/index.ts": [
-        "../node_modules/@types/express-serve-static-core/index.d.ts",
-        "../node_modules/@types/express/index.d.ts"
-      ],
       "../src/routes/utils.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/vue-server-renderer/types/index.d.ts"
-      ],
-      "../src/services/game.ts": [
-        "../src/interfaces/Game.ts"
       ],
       "../src/services/redis.ts": [
         "../node_modules/@types/redis/index.d.ts"
@@ -3420,18 +3271,10 @@
       "../node_modules/vue/types/vue.d.ts",
       "../src/config.ts",
       "../src/data/index.ts",
-      "../src/data/questions.ts",
       "../src/index.ts",
-      "../src/interfaces/Game.ts",
-      "../src/interfaces/Player.ts",
-      "../src/interfaces/User.ts",
-      "../src/routes/create/index.ts",
-      "../src/routes/game/index.ts",
       "../src/routes/home/index.ts",
       "../src/routes/index.ts",
-      "../src/routes/join/index.ts",
       "../src/routes/utils.ts",
-      "../src/services/game.ts",
       "../src/services/redis.ts"
     ]
   },
